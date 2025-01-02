@@ -5,30 +5,127 @@
  <style>
 .calculator-body{
 
-height: 300px;
-width: 250px;
+
+height: 400px;
+width: 450px;
 background-color:black;
 border-radius: 5px;
 margin:20px auto;
 padding: 20px;
 padding-top:  40px;
 
+}
+.screen{
+    background-color: white;
+        text-align: right;
+        width: 420px;
+        display: block;
+        margin: 0 auto;
+        font-size: 25px;
+        padding: 5px 10px;
+        margin-bottom: 20px;
 
+}
+.btn-calculator{
+height: 350px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.btn{
+    height: 60px;
+    width: 80PX;
+    text-align: center;
+    padding: 2px 0;
+    font-size: 20px;
+    margin: 3px;
+    border-radius: 5px;
+     
+}
+.btn1{
+    height: 210px;
+    width:75px;
+    border-radius: 5px;
 
+}
+ .btn-AC{
+    height: 60px;
+    width: 80PX;
+    text-align: center;
+    padding: 2px 0;
+    font-size: 20px;
+    margin: 3px;
+    border-radius: 5px;
+   background-color: red;
+
+}
+.btn-2{ height: 60px;
+    width: 80PX;
+    text-align: center;
+    padding: 2px 0;
+    font-size: 20px;
+    margin: 3px;
+    border-radius: 5px;
+   background-color: gray;
 
 }
 
+.btn:hover{
+    box-shadow: 0 0 5px 0 lightblue;
+    transition: 0.5s;
+    color: lightpink;
+}
+.btn1:hover{
+    box-shadow: 0 0 5px 0 lightblue;
+    transform: 0.5s;
+    color: lightpink;
+}
+
+.btn-2:hover{
+    box-shadow: 0 0 5px 0 lightblue;
+    transition: 0.5s;
+    color: lightpink;
+}
+.btn-AC:hover{
+    box-shadow: 0 0 5px 0 lightblue;
+    transition: 0.5s;
+    color: lightpink;
+}
     </style>
 </head>
 <body>
     <div class="calculator-body"> 
+            <input type="text" value="0" class="screen">
+     <div class="btn-calculator"> 
+            <button class="btn-AC">AC</button>
+            <button class="btn">9</button>
+            <button class="btn">6</button>
+            <button class="btn">3</button>
+            <button class="btn">0</button>
 
 
+            <button class="btn-2">/</button>
+            <button class="btn">8</button>
+            <button class="btn">5</button>
+            <button class="btn">2</button>
+            <button class="btn-2">.</button>
 
 
+            <button class="btn-2">*</button>
+            <button class="btn">7</button>
+            <button class="btn">4</button>
+            <button class="btn">1</button>
+            <button class="btn-2">%</button>
+
+
+            <button class="btn-2">-</button>
+            <button class="btn-2">+</button>
+            <button class="btn1">=</button>
+
+        </div>
 
     </div>
-   
-    
 </body>
 </html>
